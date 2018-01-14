@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/basicLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="2dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/basicImageView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <LinearLayout
+        android:id="@+id/basicContentLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/basicTitleTextView"
+            style="@style/BlackFontTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/basicSizeTextView"
+            style="@style/BlackFontTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/basicUrlTextView"
+            style="@style/BlackFontTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/basicDateTextView"
+            style="@style/BlackFontTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:lines="1" />
+    </LinearLayout>
+</LinearLayout>
